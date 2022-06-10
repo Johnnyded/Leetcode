@@ -1,0 +1,17 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i=0; i < nums.length; i++)
+        {
+            if(Arrays.stream(nums).anyMatch(x -> x==(target - nums[i])))
+            {
+                //Linear Search Time
+                for (int j=i; j< nums.length; j++)
+                {
+                    if(nums[j] == target - nums[i])
+                        return new int[] {i,j}  ;
+                }
+            }
+        }
+        return null;
+    }
+}
