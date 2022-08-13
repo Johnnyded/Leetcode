@@ -1,4 +1,25 @@
 /*
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+ 
+
+Example 1:
+
+Input: s = "()"
+Output: true
+Example 2:
+
+Input: s = "()[]{}"
+Output: true
+Example 3:
+
+Input: s = "(]"
+Output: false
+
  * The Solution to this problem is to use a stack to detect for validity of open and
  *  closing brackets. 
  * So whenever we encounter an opening bracket, we push a closing bracket into the stack
