@@ -25,6 +25,9 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
  *  anywhere without overlapping
  * In the case that the new interval does overlap, we update its values with with the
  * overlapped interval(s)'s min and max and append it to the result, giving a perfectly merged array
+ *  Once the merged new interval is updated, it will be added as it will fall into one
+ *  of the if statements and all subsequent intervals will be added by default with the
+ *  clever if statements
  */
 
 class Solution {
