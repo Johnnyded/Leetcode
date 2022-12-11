@@ -34,7 +34,7 @@ class Solution {
         //We will be searching through the numbers [1,n] as this is our domain of answers
         //Initiate variables for binary search
         int high = nums.length - 1;
-        int low = 1;
+        int low = 1;    
         while(low< high){
             int middle = low + (high - low)/2;
             int count=0;
